@@ -1,0 +1,144 @@
+//
+//  Common (styles-m.css)
+//  _____________________________________________
+& when (@media-common = true) {
+    .page-wrapper {  
+        .page-header {
+            margin-bottom: 20px;
+            border-bottom: unset;
+        }      
+        img.vista-desktop {
+            display: none;
+        }
+        img.vista-mobil {
+            display: block;
+            width: 55px;
+            height: 55px;
+            margin: 0 30px;
+        }
+        .logo {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .header {
+            .navegacion {
+                .lista {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-wrapper {
+        .header {
+            .logo {
+                margin: 15px auto 25px 0;
+            }
+            img.vista-mobil {
+                display: none;
+            }
+            img.vista-desktop {
+                display: block;
+            }
+            .navegacion {
+                ul.lista {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    margin: 15px 0px;
+                    justify-content: flex-end;
+                }
+                nav.navegacion {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .lista > li > a {
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    padding: 8px 20px;
+                }
+                ul.lista a {
+                    color: #000000;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                .lista li a:hover {
+                    color: #796eff;
+                    transition: all 0.3s;
+                }
+                .lista li .submenu {
+                    display: block;
+                    background: #fff;
+                    padding: 15px;
+                    position: absolute;
+                    display: none;
+                    margin-left: 12px;
+                    border-radius: 10px;
+                    transition-duration: 4s;
+                }
+                .lista li:hover .submenu {
+                    display: flex;
+                    left: 0;
+                    top: 105px;
+                    transition: all 1s;
+                    border: 1px solid lightgray;
+                    padding: 8px 0px;
+                }
+                .lista li .submenu .submenu-items {
+                    margin: 0 20px;
+                }
+                .lista li .submenu .carre {
+                    width: 154px;
+                }
+                .lista li .submenu .car {
+                    width: 120px;
+                }
+                .lista li .submenu .especi {
+                    width: 205px;
+                }
+                .lista li .submenu .submenu-items a {
+                    text-decoration: none;
+                    color: #000000;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .submenu-items {
+                    width: 222px;
+                }
+                .submenu-items ul {
+                    padding: 0;
+                }
+                .linea {
+                    border-left: 1px solid lightgray;
+                    height: 175px;
+                }
+                p.subtittle {
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                .navegacion {
+                    .lista {
+                        .submenu {
+                            .submenu-items {
+                                ul {
+                                    li a:hover {
+                                        color: #796eff;
+                                        border-bottom: 1px solid #796eff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

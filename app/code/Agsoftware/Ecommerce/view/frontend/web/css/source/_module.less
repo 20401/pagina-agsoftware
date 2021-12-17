@@ -1,0 +1,97 @@
+@font-family: "Roboto", Helvetica, Arial, sans-serif;
+@centrar: center;
+@import "_module1.less";
+
+.media-width(@extremum, @break) when (@extremum ='max') and (@break =@screen__s) {
+    .page-wrapper {
+        .page-main {
+            .columns {
+                .column {
+                    .widget {
+                        font-family: @font-family;
+
+                        .container_ecommerce {
+                            background-color: #e1e1e1;
+
+                            .pagebuilder-column-group {
+                                .pagebuilder-column {
+                                    text-align: @centrar;
+                                }
+
+                                .pagebuilder_column_two {
+                                    padding-top: 1cm;
+                                    p {
+                                        text-align: @centrar;
+                                        font-size: xx-large;
+                                    }
+
+                                    .sub_tittle {
+                                        p {
+                                            text-align: center;
+                                            font-size: x-large;
+                                        }
+
+                                    }
+
+                                    .texts {
+                                        p {
+                                            text-align: center;
+                                            font-size: small;
+                                            color: #8d8d8d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .page-wrapper {
+        .page-main {
+            .columns {
+                .column {
+                    .widget {
+                        font-family: @font-family;
+
+                        .container_ecommerce {
+                            background-color: #e1e1e1;
+
+                            .pagebuilder-column-group {
+                                .pagebuilder-column {
+                                    text-align: @centrar;
+                                }
+
+                                .pagebuilder_column_two {
+                                    p {
+                                        text-align: @centrar;
+                                        font-size: xx-large;
+                                    }
+
+                                    .sub_tittle {
+                                        p {
+                                            text-align: center;
+                                            font-size: x-large;
+                                        }
+
+                                    }
+
+                                    .texts {
+                                        p {
+                                            text-align: center;
+                                            font-size: small;
+                                            color: #8d8d8d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

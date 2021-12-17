@@ -1,0 +1,84 @@
+@primary-color: rgb(0, 101, 255);
+@secound-color: #796eff;
+@transparente: rgba(210, 105, 30, 0);
+@font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+@import "_module1.less";
+
+.media-width(@extremum, @break) when (@extremum ='max') and (@break =@screen__m) {
+    .page-wrapper {
+        .page-main {
+            padding: 0px;
+
+            .columns {
+                .column {
+                    .widget {
+                        font-family: @font-family;
+
+                        .container_banner {
+                            .pagebuilder-slider {
+                                .slick-prev {
+                                    background-color: @transparente;
+
+                                    &::before {
+                                        font-size: 19px;
+                                    }
+                                }
+
+                                .slick-next {
+                                    background-color: @transparente;
+
+                                    &::before {
+                                        font-size: 19px;
+                                    }
+                                }
+
+                                .slick-list {
+                                    .slick-track {
+                                        .slick-slide {
+                                            .pagebuilder-slide-wrapper {
+                                                .pagebuilder-overlay {
+                                                    padding: 18px 0px 0px 62px;
+
+                                                    .pagebuilder-collage-content {
+                                                        h2 {
+                                                            color: white;
+                                                            margin-top: 0px;
+                                                        }
+
+                                                        p {
+                                                            color: white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .container_buttom {
+                                padding-left: 62px;
+                                position: absolute;
+                                top: 21rem;
+                                z-index: 1;
+
+                                .pagebuilder-button-primary {
+                                    padding: 12px 26px;
+                                    background: @primary-color;
+                                    border: 1px solid @primary-color;
+                                }
+
+                                .pagebuilder-button-secondary {
+                                    padding: 12px 26px;
+                                    background: #ffffff;
+                                    border: 1px solid @primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

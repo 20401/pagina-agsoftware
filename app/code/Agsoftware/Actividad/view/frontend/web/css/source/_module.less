@@ -1,0 +1,33 @@
+@primary-color: rgb(0, 101, 255);
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+    .page-wrapper {
+        .page-main {
+            .columns {
+                .column {
+                    .widget {
+                        .pagebuilder-column-group {
+                            .pagebuilder-column {
+                                h1 {
+                                    color: @primary-color;
+                                }
+
+                                p {
+                                    font-size: larger;
+                                    padding-bottom: 8px;
+                                }
+                            }
+
+                            .pagebuilder-column {
+                                figure {
+                                    .pagebuilder-mobile-hidden {
+                                        height: 436px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

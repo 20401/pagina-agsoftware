@@ -1,0 +1,64 @@
+@font-family: "Roboto", Helvetica, Arial, sans-serif;
+.media-width(@extremum, @break) when (@extremum ='max') and (@break =@screen__m) {
+    .page-wrapper{
+        .page-main{
+            .column{
+                .widget{
+                    font-family: @font-family;
+                    h1{
+                        margin-bottom: 10px;
+                        font-size: 39px;
+                        font-weight: 600;
+                    }
+                    .dividor_up{
+                        hr{
+                            margin: 0;
+                        }
+                    }
+                    .dividor_down{
+                        hr{
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Desktop
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+    .page-wrapper{
+        .page-main{
+            .column{
+                .widget{
+                    font-family: @font-family;
+                    h1{
+                        margin-bottom: 10px;
+                        font-size: 50px;
+                        font-weight: 600;
+                    }
+                    .dividor_up{
+                        hr{
+                            margin: 0;
+                        }
+                    }
+                    .dividor_down{
+                        hr{
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
