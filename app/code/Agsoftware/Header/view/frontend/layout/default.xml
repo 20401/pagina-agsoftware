@@ -9,16 +9,16 @@
     <body>
         <referenceContainer name="header-wrapper" >
             <block class="Magento\Theme\Block\Html\Header\Logo" name="links-custom"
-                   template="Agsoftware_HeaderCustom::links-custom.phtml" after="logo"/>
+                   template="Agsoftware_Header::links-custom.phtml" after="logo"/>
         </referenceContainer>
         <referenceBlock name="minicart" remove="true"/>
         <referenceBlock name="top.search" remove="true"/>
         <referenceBlock name="navigation.sections">
             <action method="setTemplate">
-                <argument name="template" xsi:type="string">Agsoftware_HeaderCustom::sections.phtml</argument>
+                <argument name="template" xsi:type="string">Agsoftware_Header::sections.phtml</argument>
             </action>
         </referenceBlock>
-        <referenceBlock name="logo" template="Agsoftware_HeaderCustom::logo.phtml"/> 
+        <referenceBlock name="logo" template="Agsoftware_Header::logo.phtml"/> 
         <referenceContainer name="header-wrapper" remove="false"/>     
     </body>
 </page>

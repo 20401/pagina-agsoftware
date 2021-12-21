@@ -12,7 +12,7 @@
 		<block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml" />
 		<referenceContainer name="before.body.end">
 			<block class="Magento\Theme\Block\Html\Footer" name="footer" template="Agsoftware_Footer::footer.phtml" />
-			<referenceBlock name="wishlist.email.items" remove="true"/>
+			
 		</referenceContainer>
-				
+	</body>
 </page>

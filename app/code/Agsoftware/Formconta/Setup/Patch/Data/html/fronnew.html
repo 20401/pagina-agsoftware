@@ -5,7 +5,6 @@
             background-size: 100vw 100vh;
             background-attachment: fixed;
             margin: 0;
-
             padding: 0;
             transition: all 2s;
         }
@@ -74,20 +73,20 @@
         }
 
         #btoEnviar {
-            background-color: #31384a;
+            background-color: rgb(0, 101, 255);
             color: #fff;
 
         }
 
         form i {
             font-size: 50px;
-            color: #fff;
+            color: rgb(245, 2, 2);
             border: none;
         }
 
         #btoEnviar:hover {
             cursor: pointer;
-            background-color: lime;
+            background-color: #796eff;
         }
 
         .redes-socoales {
@@ -95,8 +94,8 @@
             justify-content: space-evenly;
         }
 
-        .sk-map{
-            display:none;
+        .sk-map {
+            display: none;
         }
 
 
@@ -143,12 +142,12 @@
                 max-width: 98%;
             }
 
-.sk-map{
-    display:flex;
-    background-color: rgba(255, 0, 0, 0.13);
-    height: 400px;
-    width:98%;
-}
+            .sk-map {
+                display: flex;
+                background-color: rgba(255, 0, 0, 0.13);
+                height: 400px;
+                width: 98%;
+            }
 
 
 
@@ -168,18 +167,18 @@
                 <br>
                 <div class="cont-sk2">
                     <label for="nombre" class="sk-nombre">NOMBRE*</label><br>
-                    <input class="sk-nombre" type="text" name="nombre" id="nombre" required> <br>
+                    <input class="sk-nombr" type="text" name="nombre" id="nombre" required> <br>
                     <label for="email" class="sk-email">EMAIL*</label> <br>
                     <input type="email" name="email" id="email" required><br>
 
                     <label for="telefono" label class="sk-telefono">TELEFONO*</label><br>
-                    <input type="number" class="sk-telefono" name="numero" id="telefono" required><br>
+                    <input type="number" class="sk-telefon" name="numero" id="telefono" required><br>
                     <label for="empresa" class="sk-empresa">EMPRESA*</label><br>
-                    <input class="sk-empresa" type="text" name="empresa" id="empresa" required><br>
+                    <input class="sk-empres" type="text" name="empresa" id="empresa" required><br>
                 </div>
                 <br><br>
                 <label class="sk-mensaje" for="mensaje">MENSAJE*</label><br>
-                <textarea class="sk-mensaje" type="tel" name="mensaje-cliente" required></textarea>
+                <textarea class="sk-mensaj" type="tel" name="mensaje-cliente" required></textarea>
                 <br>
 
                 <div class="sk-resultado">
@@ -197,7 +196,9 @@
                 </div>
             </div>
             <div class="sk-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3983.842004826246!2d-76.39337!3d3.1364044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a793e89f81ffb%3A0xcc96665dd525d899!2sAgsoftware!5e0!3m2!1ses!2sco!4v1639669476450!5m2!1ses!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3983.842004826246!2d-76.39337!3d3.1364044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a793e89f81ffb%3A0xcc96665dd525d899!2sAgsoftware!5e0!3m2!1ses!2sco!4v1639669476450!5m2!1ses!2sco"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </form>
     </body>

@@ -2,7 +2,7 @@
 
 namespace Agsoftware\Formconta\Setup\Patch\Data;
 
-class Contactenos implements \Magento\Framework\Setup\Patch\DataPatchInterface
+class Contactenosv2 implements \Magento\Framework\Setup\Patch\DataPatchInterface
 {
     /**
      * CreateHeaderpage constructor.
